@@ -4,14 +4,14 @@ http://dummy.restapiexample.com
 Please use these scripts responsibly and do not hammer the server.
 
 There is a base class which contains all action methods.
-Test classes can then extend the base class.
+	- Test classes can then extend the base class.
 
-I have also added a console output formating listener
-which adds a header for each test in the console output.
+There is a custom TestNG listener to customize console output.
+	- Adds a header in the console output for each test that is ran.
 
 
-NOTE:   This project no longer works 100% due to recent changes made server-side.
-		I have been in touch with the site admin, and will apply updates after server-side fixes are set in place.
+NOTE:   This project currently does not works 100% due to server-side errors during their recent updates.
+		I have been in touch with the site admin, and will apply updates once server-side fixes are set in place.
 
 
 
