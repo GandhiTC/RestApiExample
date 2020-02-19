@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="REST-assured API Test Partial Suite 1" parallel="false">
+
+	<listeners>
+		<listener class-name="com.github.GandhiTC.java.RestApiExample.listeners.TestNGConsoleFormatter" />
+	</listeners>
+	
+	<!-- Max number of employees to show in output window when getAllEmployees() method is tested, 0 = Show all -->
+    <parameter name="maxListSize" value="10" />
+
+	<test name="Test 1:  Create Employee/Verify Employee/Update Employee/Verify Updates/Delete Employee/Verify Employee Not In Employee List">
+		<classes>
+			<class name="com.github.GandhiTC.java.RestApiExample.tests.Test1" />
+		</classes>
+	</test>
+	
+</suite>
